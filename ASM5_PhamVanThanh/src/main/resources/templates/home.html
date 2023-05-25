@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="_layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div layout:fragment="content">
+
+    <ul class="list-group list-group-horizontal">
+        <li th:each="course : ${listCourse}" class="list-group-item">
+            <div class="date" th:text="${course.getStartDate()}"></div>
+            <div class="details">
+                <span class="lecturer" th:text="${course.getLectureName()}"></span><br>
+                <span class="place" th:text="${course.getPlace()}"></span>
+            </div>
+            <a th:href="@{/course/showFormForUpdate/{id}(id=${course.id})}" class="btn btn-primary">Edit</a>
+            <a class="btn btn-danger" th:href="@{/course/remove/{id}(id=${course.id})}">Delete</a>
+
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+.course {
+    list-style: none;
+}
+
+.course > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.course > li .date {
+    text-align: center;
+    background-color: #d41d50;
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.course > li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    font-size:15px;
+}
+.btn {
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnn {
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+
+}
